@@ -1,0 +1,50 @@
+<!--
+
+  <div class="col-md-6 col-offset-3">
+
+  <h1> Hello there {{currentUser.firstName}} ! </h1>
+  <p> Succesfull Loged </p>
+  <h3> Those are de registered users General Kenobi </h3>
+  <ul>
+    <li *ngFor="let user of users">
+      {{user.username}} {{user.firstName}} {{user.lastName}}
+        <a (click)="deleteUser(user.id)">Delete</a>
+    </li>
+  </ul>
+  <p> <a [routerLink]="['/login']">Logout</a></p>
+</div>
+
+
+-->
+<!--
+  https://bootstrapious.com/p/bootstrap-sidebar
+-->
+
+
+
+<div class="sidenav">
+  <img src="https://cdn1.iconfinder.com/data/icons/mix-color-4/502/Untitled-1-512.png" alt="user" style="
+  height: 11em;
+  width: 12em;
+  padding-left: 1.5em;
+  vertical-align: super;
+">
+  <a href=""> My Info </a>
+  <a href=""> My Products </a>
+  <a href=""> Catalogue </a>
+  <a href=""> Support </a>
+  <a href="" [routerLink]="['/login']"> Logout </a>
+</div>
+
+<div class="main">
+  <h2> Hello there, {{currentUser.firstName}} </h2>
+  <p> Here you should watch your info, instead here are the gesistered users lol</p>
+  <ul>
+      <li *ngFor="let user of users">
+        {{user.username}} {{user.firstName}} {{user.lastName}}
+          <a (click)="deleteUser(user.id)">Delete</a>
+      </li>
+    </ul>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <p>lololo</p>
+</div>

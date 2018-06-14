@@ -1,0 +1,8 @@
+img {
+    max-block-size: 1200px;
+    max-inline-size: 800px;
+    max-height: 90%;
+    max-width: 100%;
+    box-shadow: azure;
+    box-sizing: content-box;
+}
